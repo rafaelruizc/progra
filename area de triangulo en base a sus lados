@@ -1,0 +1,27 @@
+// AreaTriangulo2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "math.h";
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+int main ()
+{
+	int lado1,lado2,lado3;
+	float S, Area;
+	cout << "Ingrese el lado1: ";
+	cin >> lado1;
+	cout << "Ingrese el lado2: ";
+	cin >> lado2;
+	cout << "Ingrese el lado3: ";
+	cin >> lado3;
+	S=(lado1+lado2+lado3)/2.0;
+	Area= sqrt(S*(S-lado1)*(S-lado2)*(S-lado3));
+	cout << "el Area es: "<< Area;
+	getch ();
+	return 0;
+}
+
