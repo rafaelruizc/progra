@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+	float A,B,C,IngresoTotal;
+	cout<< "Ingrese ventas producto A por semana: ";
+	cin>> A;	
+	cout<< "Ingrese ventas producto B por semana: ";
+	cin>> B;	
+	cout<< "Ingrese ventas producto C por semana: ";
+	cin>> C;
+	IngresoTotal=(A+B+C)*4;
+	cout<< "El ingreso total de la empresa del mes es: ";
+	cout<< IngresoTotal;
+	getch ();
+	return 0;
+}
