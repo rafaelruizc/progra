@@ -1,0 +1,41 @@
+// rafa.cpp : Defines the entry point for the console application.
+// autor :Rafael Ruiz
+// fecha: 01/10/13
+// version: 1.0
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+int main()
+{
+	float g,h,t,IAC,prom,e,c,S,n;
+	S=0;
+	for (c=1; c<= g; c++)
+	{ 
+		cout<< "Ingrese el numero de huevos promedio que pone una gallina: \n";
+		cin>> n;
+		cout<< "Ingrese el numero de huevos promedio por granja: \n";
+		cin>> h;
+		
+		for (e=1; e<= h; e++)
+		{ 
+			cout<< "Ingrese el tamanho en centimetros de los huevos: \n";
+			cin>> t;
+			S=S+t;
+			prom=S/h;
+			IAC=prom/n;
+		}
+		if (IAC>=5)
+			{	
+				cout<< "El precio por huevo es de 5bs"; 
+			}
+			else
+			{
+				cout<< "el precio por huevo es de 4bs";
+			}
+	}
+	getch ();
+	return 0;
+}
