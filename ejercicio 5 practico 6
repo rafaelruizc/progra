@@ -1,0 +1,25 @@
+// practico 6.cpp : Defines the entry point for the console application.
+// ALUMNO:RAFAEL RUIZ
+// FECHA:08/10/13
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{	
+	int i, prod, n;
+	
+	prod=1;
+	cout<< "ingrese la cantidad de numeros enteros: \n";
+	cin>> n;
+	for (i=1;i<=n;i++)
+	{ 
+		prod=prod*i;
+	}
+	cout<< "el producto de los primeros numeros enteros ingresados es: \n";
+	cout<< prod;
+	getch ();
+	return 0;
+}
